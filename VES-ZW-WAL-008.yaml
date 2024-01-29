@@ -97,7 +97,7 @@ blueprint:
       default: []
       selector:
         action: {}
-  source_url: https://github.com/beerygaz/ha-bp-VES-ZW-WAL-008
+  source_url: https://github.com/beerygaz/ha-bp-VES-ZW-WAL-008/blob/main/VES-ZW-WAL-008.yaml
 mode: single
 max_exceeded: silent
 variables:
