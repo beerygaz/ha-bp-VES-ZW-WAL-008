@@ -17,7 +17,7 @@ blueprint:
   domain: automation
   input:
     vesternet_device:
-      name: Vesternet Controller
+      name: Vesternet 4-Button Controller
       description: List of available Vesternet 4-Button devices.
       selector:
         device:
@@ -32,13 +32,13 @@ blueprint:
         action: {}
     O1_key_pressed:
       name: Top OFF (O) Key Pressed
-      description: Action to run when Top OFF (O) button is pressed
+      description: Action to run when top OFF (O) button is pressed
       default: []
       selector:
         action: {}
     I2_key_pressed:
       name: Bottom ON (I) Key Pressed
-      description: Action to run when Bottom ON (I) button is pressed
+      description: Action to run when bottom ON (I) button is pressed
       default: []
       selector:
         action: {}
@@ -48,6 +48,7 @@ blueprint:
       default: []
       selector:
         action: {}
+  
     I1_key_held_down:
       name: Top ON (I) Held Down
       description: Action to run when top ON (I) button is held down
@@ -68,7 +69,7 @@ blueprint:
       selector:
         action: {}
     O1_key_released:
-      name: OFF (O) Released
+      name: Top OFF (O) Released
       description: Action to run when top OFF (O) button is released after being held down.
       default: []
       selector:
