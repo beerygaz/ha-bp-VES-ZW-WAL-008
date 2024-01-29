@@ -1,9 +1,18 @@
 blueprint:
-  name: Z-Wave - Vesternet Wall Controller 4-Button 
+  name: Z-Wave JS - Vesternet Wall Controller 4-Button 
   description:
-    "Create automations for Vesternet 4-Button Scene Controller (VES-ZW-WAL-008) using the Z-Wave JS integration.
-    https://www.vesternet.com/en-global/collections/z-wave-keyfobs-remotes-wall-controllers/products/vesternet-z-wave-wall-controller-4-button
+    "Create automations for Vesternet 4-Button Scene Controller [VES-ZW-WAL-008](https://www.vesternet.com/en-global/collections/z-wave-keyfobs-remotes-wall-controllers/products/vesternet-z-wave-wall-controller-4-button) using the Z-Wave JS integration.
+    
     The buttons are labelled assuming the LED is positioned at the top of the device.
+
+    The automations supports the following triggers for each button:
+
+    * Pressed
+ 
+    * Held Down
+ 
+    * Released
+ 
     "
   domain: automation
   input:
