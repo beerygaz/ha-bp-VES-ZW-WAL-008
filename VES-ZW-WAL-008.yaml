@@ -3,12 +3,13 @@ blueprint:
   description:
     "Create automations for Vesternet 4-Button Scene Controller (VES-ZW-WAL-008) using the Z-Wave JS integration.
     https://www.vesternet.com/en-global/collections/z-wave-keyfobs-remotes-wall-controllers/products/vesternet-z-wave-wall-controller-4-button
+    The buttons are labelled assuming the LED is positioned at the top of the device.
     "
   domain: automation
   input:
     vesternet_device:
       name: Vesternet Controller
-      description: List of available Vesternet devices.
+      description: List of available Vesternet 4-Button devices.
       selector:
         device:
           integration: zwave_js
