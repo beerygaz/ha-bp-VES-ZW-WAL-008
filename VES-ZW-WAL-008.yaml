@@ -16,50 +16,51 @@ blueprint:
           manufacturer: Vesternet
           model: VES-ZW-WAL-008
     I1_key_pressed:
-      name: Top ON(I) Key Pressed
+      name: Top ON (I) Key Pressed
       description: Action to run when Top ON (I) button is pressed
       default: []
       selector:
         action: {}
     O1_key_pressed:
-      name: Top OFF(O) Key Pressed
+      name: Top OFF (O) Key Pressed
       description: Action to run when Top OFF (O) button is pressed
       default: []
       selector:
         action: {}
     I2_key_pressed:
-      name: Bottom ON(I) Key Pressed
+      name: Bottom ON (I) Key Pressed
       description: Action to run when Bottom ON (I) button is pressed
       default: []
       selector:
         action: {}
     O2_key_pressed:
-      name: Bottom OFF(O) Key Pressed
+      name: Bottom OFF (O) Key Pressed
       description: Action to run when Bottom OFF (O) button is pressed
       default: []
       selector:
         action: {}
     I1_key_held_down:
-      name: ON (I) Held Down
-      description: Action to run when ON (I) button is held down
-      default: []
-      selector:
-        action: {}
-    O1_key_held_down:
-      name: OFF (O) Held Down
-      description: Action to run when OFF (O) button is held down
+      name: Top ON (I) Held Down
+      description: Action to run when top ON (I) button is held down
       default: []
       selector:
         action: {}
     I1_key_released:
       name: ON (I) Released
-      description: Action to run when ON (I) button is released after being held down.
+      description: Action to run when top ON (I) button is released after being held down.
+      default: []
+      selector:
+        action: {}
+
+    O1_key_held_down:
+      name: Top OFF (O) Held Down
+      description: Action to run when top OFF (O) button is held down
       default: []
       selector:
         action: {}
     O1_key_released:
       name: OFF (O) Released
-      description: Action to run when OFF (O) button is released after being held down.
+      description: Action to run when top OFF (O) button is released after being held down.
       default: []
       selector:
         action: {}
@@ -69,15 +70,15 @@ blueprint:
       default: []
       selector:
         action: {}
-    O2_key_held_down:
-      name: Bottom OFF (O) Held Down
-      description: Action to run when Bottom OFF (O) button is held down
+    I2_key_released:
+      name: Bottom ON (I) Released
+      description: Action to run when bottom ON (I) button is released after being held down.
       default: []
       selector:
         action: {}
-    I2_key_released:
-      name: Bottom ON (I) Released
-      description: Action to run bottom when ON (I) button is released after being held down.
+    O2_key_held_down:
+      name: Bottom OFF (O) Held Down
+      description: Action to run when bottom OFF (O) button is held down
       default: []
       selector:
         action: {}
@@ -87,7 +88,7 @@ blueprint:
       default: []
       selector:
         action: {}
-  #source_url: "put me on git hub"
+  source_url: https://github.com/beerygaz/ha-bp-VES-ZW-WAL-008
 mode: single
 max_exceeded: silent
 variables:
